@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio website</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/0e192eb0cd.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img class="logo" src="images/logo.png">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Software Developer</p>
+                <h1>Hi, I'm <span>Royce Barboz</span> <br> welcome to my Portfolio Website</h1>
+            </div>
+        </div>
+    </div>
+    <!---about-------------------------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/potrait.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum quaerat illum tempora blanditiis optio officiis possimus. Beatae aspernatur explicabo, eos impedit, sunt sed, cum nobis adipisci autem eaque numquam nostrum!</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('projects')">Projects</p>
+                        <p class="tab-links" onclick="opentab('eduaction')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Designing Web/App interfaces</li>
+                            <li><span>Devops</span><br>Designing Web/App interfaces</li>
+                            <li><span>Machine Learning</span><br>Designing Web/App interfaces</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="projects">
+                        <ul>
+                            <li><span>Website</span><br>Developed MERN Stack Website</li>
+                            <li><span>Devops</span><br>created a CI/CD pipline for the Website</li>
+                            <li><span>Generative AI app on Azure</span><br>Developed a Gen AI on Azure</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="eduaction">
+                        <ul>
+                            <li><span>2026</span><br>Stevens Institute of Technology</li>
+                            <li><span>2024</span><br>St. Francis Institute Of Technology</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---services-------------------------------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Website Development</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam natus quibusdam dolorum, recusandae ea porro odit suscipit, perspiciatis consequatur eaque beatae quia aliquid ex dolores sint enim neque eligendi veritatis!</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-connectdevelop"></i>
+                    <h2>CI/CD pipline Development</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam natus quibusdam dolorum, recusandae ea porro odit suscipit, perspiciatis consequatur eaque beatae quia aliquid ex dolores sint enim neque eligendi veritatis!</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-cloud"></i>
+                    <h2>Cloud Development</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam natus quibusdam dolorum, recusandae ea porro odit suscipit, perspiciatis consequatur eaque beatae quia aliquid ex dolores sint enim neque eligendi veritatis!</p>
+                    <a href="#">learn more</a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-------potfolio---------------------------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" >
+                    <div class="layer">
+                        <h3>social media app</h3>
+                        <p>Download it from play store</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" >
+                    <div class="layer">
+                        <h3>social media app</h3>
+                        <p>Download it from play store</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" >
+                    <div class="layer">
+                        <h3>social media app</h3>
+                        <p>Download it from play store</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!----------------contacts---------------------------------->
+    <div id="contact">
+        <div class="container">
+            <div id="row">
+                <div class="contact-left">
+                    <h1>Contact Me</h1>
+                    <p>roycebarboz@gmail.com</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/royce-barboz/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/roycebarboz"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="" class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="text" name="Email" placeholder="Your Email (Please use @gmail.com)" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="confirmation"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js">
+    </script>
+</body>
+</html>
